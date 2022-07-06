@@ -2,13 +2,10 @@
 
 /**
 *main - this program prints _putchar
-*created : Sanctus-Peter
-*cc: 5 july, 2022
 *Return: (0) if successful
 */
 
-int main(void)
-{
+int main(void){
 	char var[] = "_putchar";
 	int ii;
 	/*length of the array var*/
@@ -19,6 +16,5 @@ int main(void)
 		_putchar(var[ii]);
 	}
 	_putchar('\n');
-
 	return (0);
 }
