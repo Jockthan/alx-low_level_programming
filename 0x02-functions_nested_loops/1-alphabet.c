@@ -5,9 +5,11 @@
 */
 void print_alphabet(void)
 {
-	int ii;
+	int j;
 
-	for (ii = 'a'; ii <= 'z'; ii++)
-		_putchar(ii);
+	for (j = 'a'; j <= 'z'; j++)
+	{
+	_putchar(j);
+	}
 	_putchar('\n');
 }
