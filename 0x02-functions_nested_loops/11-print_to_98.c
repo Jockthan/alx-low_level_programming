@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 
 /**
  * print - print variable recursively using _putchar
@@ -10,9 +10,10 @@ void print(int n);
  * print_to_98 - print all natural numbers from var to 98
  * @var: the starting limit
  *
- * Created by: Sanctus-Peter
+ * Created by: Jonah Jockthan
  * cc: 5th july, 2022
  */
+
 void print_to_98(int var)
 {
 	int stopLimit = 98;
@@ -34,6 +35,7 @@ void print_to_98(int var)
 	else
 	{
 		int jj;
+
 		for (jj = var; jj <= stopLimit; jj++)
 		{
 			print(jj);
@@ -51,6 +53,7 @@ _putchar('\n');
  * print - to print
  * @n: var
  */
+
 void print(int n)
 {
 	if (n < 0)
