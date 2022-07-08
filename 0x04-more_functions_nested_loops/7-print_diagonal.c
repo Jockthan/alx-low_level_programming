@@ -8,17 +8,22 @@
  * cc: 7th july, 2022
  */
 
-void print_line(int n)
+void print_diagonal(int n)
 {
-	int i;
+	int len, space;
 
-	if (n <= 0)
+	if (n > 0)
 	{
-		_putchar('\n');
-		return;
-	}
+		for (len = 0; len < n; len++)
+		{
+			for (space = 0; space < len; space++)
+				_putchar(' ');
+			_putchar('\\');
 
-	for (i = 0; i < n; i++)
-		_putchar('_');
+			if (len == (n - 1))
+				continue;
+		_putchar('\n');
+		}
+	}
 	_putchar('\n');
 }
