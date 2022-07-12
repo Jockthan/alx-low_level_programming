@@ -3,12 +3,12 @@
 #include <limits.h>
 
 /**
- * _atoi - coverts a string to integer
- * @str: pointer to string to be converted
- *  Return: converted string
- *   Created by: Jonah Jockthan
- *   cc: 12th july, 2022.
- */
+*_atoi - coverts a string to integer
+*@str: pointer to string to be converted
+*Return: converted string
+*Created by: Jonah Jockthan
+*cc: 12th july, 2022.
+*/
 
 int _atoi(char *str)
 {
@@ -18,7 +18,7 @@ int _atoi(char *str)
 	{
 		i++;
 	}
-	
+
 	if (str[i] == '-' || str[i] == '+')
 	{
 		sign = 1 - 2 * (str[i++] == '-');
@@ -26,8 +26,7 @@ int _atoi(char *str)
 
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		if (base > INT_MAX / 10	|| (base == INT_MAX / 10
-			&& str[i] - '0' > 7))
+		if (base > INT_MAX / 10	|| (base == INT_MAX / 10 && str[i] - '0' > 7))
 		{
 			if (sign == 1)
 				return (INT_MAX);
