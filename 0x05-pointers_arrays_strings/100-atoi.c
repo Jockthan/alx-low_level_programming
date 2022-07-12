@@ -18,6 +18,7 @@ int _atoi(char *str)
 	{
 		i++;
 	}
+	
 	if (str[i] == '-' || str[i] == '+')
 	{
 		sign = 1 - 2 * (str[i++] == '-');
