@@ -10,7 +10,6 @@
  *   cc: 12th july, 2022.
  */
 
-
 int _atoi(char *str)
 {
 	int sign = 1, base = 0, i = 0;
@@ -19,7 +18,6 @@ int _atoi(char *str)
 	{
 		i++;
 	}
-
 	if (str[i] == '-' || str[i] == '+')
 	{
 		sign = 1 - 2 * (str[i++] == '-');
