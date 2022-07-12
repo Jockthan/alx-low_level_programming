@@ -22,8 +22,7 @@ int _atoi(char *str)
 	if (str[i] == '-' || str[i] == '+')
 	{
 		sign = 1 - 2 * (str[i++] == '-');
-	}
-
+										}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		if (base > INT_MAX / 10	|| (base == INT_MAX / 10 && str[i] - '0' > 7))
