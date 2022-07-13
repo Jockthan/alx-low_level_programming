@@ -1,33 +1,26 @@
-#include <time.h>
-#include <stdlib.h>
 #include <stdio.h>
-#define stopLimit 2645
-#define asciiStop 127
-#define asciiStart 32
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * main - generates a random password
- * Return: 0 if success
+ * main - Entry point
+ * Return: 0
  */
 
 int main(void)
 {
-	char password[100];
-	int randValue, num = 0, i = 0;
+	int trand;
+	int count;
+	int total;
 
 	srand(time(NULL));
-
-	while (num < stopLimit)
+	for (count = 0, total = 2772; total > 122; count++)
 	{
-		randValue = random() % asciiStop;
-		if (randValue > asciiStart)
-		{
-			password[i++] = randValue;
-			num += randValue;
-		}
+		trand = (rand() % 125) + 1;
+		printf("%c", trand);
+		total -= trand;
 	}
-	password[i++] = (2772 - num);
-	password[i] = '\0';
-	printf("%s", password);
+	printf("%c", total);
+
 	return (0);
 }
